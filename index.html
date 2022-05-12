@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Custom Context Menu</title>
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+</head>
+<body>
+    <ul class="menu-list">
+        <li class="menu-item"><i class="fa-solid fa-folder-open"></i> View</li>
+        <li class="menu-item"><i class="fa-solid fa-arrow-down-wide-short"></i> Sort by</li>
+        <li class="menu-item"><i class="fa-solid fa-arrows-rotate"></i> Refresh</li>
+        <hr/>
+        <li class="menu-item"><i class="fa-solid fa-plus"></i> New <i class="fa-solid fa-chevron-right"></i>
+            <ul class="submenu-list">
+                <li class="menu-item"><i class="fa-solid fa-folder"></i> Folder</li>
+                <li class="menu-item"><i class="fa-solid fa-bolt"></i> Shortcut</li>
+                <li class="menu-item"><i class="fa-solid fa-image"></i> Bitmap Image</li>
+            </ul>
+        </li>
+        <hr/>
+        <li class="menu-item"><i class="fa-solid fa-image"></i> Display Settings</li>
+        <li class="menu-item"><i class="fa-solid fa-marker"></i> Personalize</li>
+        <li class="menu-item"><i class="fa-solid fa-list"></i> Show more options</li>
+    </ul>
+    <p style="margin-top: 200px; text-align: center;">Right Click anywhere on the screen to open the contxt menu</p>
+    <script src="main.js"></script>
+</body>
+</html>
