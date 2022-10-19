@@ -9,7 +9,11 @@ document.addEventListener('contextmenu', event => {
         } else {
             menuel.style.left = event.pageX + "px";
         }
-        menuel.style.top = event.pageY + "px";
+        if (event.pageY >= (window.innerHeight - 250)) {
+            menuel.style.top = (event.pageY - 250) + "px";
+        } else {
+            menuel.style.top = event.pageY + "px";
+        }
         menuel.style.display = "block";
     }
 });
