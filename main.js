@@ -3,9 +3,11 @@
 const menuel = document.querySelector(".menu-list");
 document.addEventListener('contextmenu', event => {
     event.preventDefault();
-    menuel.style.top = event.pageY+"px";
-    menuel.style.left = event.pageX+"px";
-    menuel.style.display="block";
+    if(event.target.className !== 'menu-item'){
+        menuel.style.top = event.pageY+"px";
+        menuel.style.left = event.pageX+"px";
+        menuel.style.display="block";
+    }
 });
 
 document.addEventListener("click", (e) => {
